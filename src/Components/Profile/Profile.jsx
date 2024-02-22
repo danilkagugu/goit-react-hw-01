@@ -13,7 +13,7 @@ const Profile = ({
       <a className={css.imgGoIt} href="https://goit.global/ua/" target="_blank">
         <img
           src="https://www.edu.goit.global/_next/image?url=%2Fimages%2Fprogress%2Fcat%2Fcat_day_4.svg&w=1920&q=75"
-          alt=""
+          alt="GoIt"
         />
       </a>
       <div className={css.profileBox}>

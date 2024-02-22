@@ -1,3 +1,4 @@
+import FriendListItem from "../FriendList/FriendListItem";
 import css from "./Friends.module.css";
 
 const FriendsCard = ({ friends }) => {
@@ -7,27 +8,14 @@ const FriendsCard = ({ friends }) => {
       <a className={css.imgGoIt} href="https://goit.global/ua/" target="_blank">
         <img
           src="https://www.edu.goit.global/_next/image?url=%2Fimages%2Fprogress%2Fcat%2Fcat_day_4.svg&w=1920&q=75"
-          alt=""
+          alt="GoIt"
         />
       </a>
       <div className={css.friendsBox}>
         <ul className={css.cardList}>
           {friends.map((item) => (
             <li className={css.cardItem} key={item.id}>
-              <img
-                className={css.cardImg}
-                src={item.avatar}
-                alt={name}
-                width="48"
-              />
-              <p className={css.cardName}>{item.name}</p>
-              <p
-                className={`${css.cardStatus} ${
-                  item.isOnline ? css.cardStatusOnline : ""
-                }`}
-              >
-                {item.isOnline ? "Online" : "Offline"}
-              </p>
+              <FriendListItem {...item} />
             </li>
           ))}
         </ul>

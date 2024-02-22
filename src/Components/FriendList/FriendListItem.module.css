@@ -1,0 +1,17 @@
+.cardImg {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.cardName {
+  font-size: 23px;
+  margin-bottom: 3px;
+}
+
+.cardStatus {
+  font-size: 23px;
+  color: red;
+}
+.cardStatusOnline {
+  color: green;
+}
