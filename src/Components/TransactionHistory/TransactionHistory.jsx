@@ -1,4 +1,3 @@
-import TransactionHistoryTemplate from "./TransactionHistoryTemplate";
 import css from "./TransationHistory.module.css";
 const TransactionHistory = ({ transactions }) => {
   return (
@@ -23,11 +22,9 @@ const TransactionHistory = ({ transactions }) => {
           <tbody className={css.tableTbody}>
             {transactions.map((item) => (
               <tr className={css.tableLine} key={item.id}>
-                <TransactionHistoryTemplate
-                  type={item.type}
-                  amount={item.amount}
-                  currency={item.currency}
-                />
+                <td>{item.type}</td>
+                <td>{item.amount}</td>
+                <td>{item.currency}</td>
               </tr>
             ))}
           </tbody>

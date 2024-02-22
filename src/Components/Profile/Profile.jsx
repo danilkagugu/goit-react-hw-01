@@ -1,10 +1,10 @@
-import css from "./ProfileCard.module.css";
+import css from "./Profile.module.css";
 
 const Profile = ({
   name,
   tag,
   location,
-  avatar,
+  image,
   stats: { followers, views, likes },
 }) => {
   return (
@@ -20,7 +20,7 @@ const Profile = ({
         <div className={css.topProfileBox}>
           <img
             className={css.profileImg}
-            src={avatar}
+            src={image}
             alt="User avatar"
             width="300"
           />

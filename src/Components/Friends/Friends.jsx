@@ -1,5 +1,4 @@
-import FriendsTemplate from "./FriendsTemplate";
-import css from "./FriendsCard.module.css";
+import css from "./Friends.module.css";
 
 const FriendsCard = ({ friends }) => {
   return (
@@ -15,11 +14,20 @@ const FriendsCard = ({ friends }) => {
         <ul className={css.cardList}>
           {friends.map((item) => (
             <li className={css.cardItem} key={item.id}>
-              <FriendsTemplate
-                avatar={item.avatar}
-                name={item.name}
-                isOnline={item.isOnline}
+              <img
+                className={css.cardImg}
+                src={item.avatar}
+                alt={name}
+                width="48"
               />
+              <p className={css.cardName}>{item.name}</p>
+              <p
+                className={`${css.cardStatus} ${
+                  item.isOnline ? css.cardStatusOnline : ""
+                }`}
+              >
+                {item.isOnline ? "Online" : "Offline"}
+              </p>
             </li>
           ))}
         </ul>

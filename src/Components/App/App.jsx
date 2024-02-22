@@ -4,14 +4,20 @@ import friends from "../../friends.json";
 import transactions from "../../transactions.json";
 import userData from "../../userData.json";
 
-import ProfileCard from "../Profile/ProfileCard";
-import FriendsCard from "../Friends/FriendsCard";
+import FriendsCard from "../Friends/Friends";
 import TransactionHistory from "../TransactionHistory/TransactionHistory";
+import Profile from "../Profile/Profile";
 
 function App() {
   return (
     <>
-      <ProfileCard userData={userData} />
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
 
       <FriendsCard friends={friends} />
 
