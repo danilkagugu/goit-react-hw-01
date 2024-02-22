@@ -12,12 +12,10 @@ function App() {
   return (
     <>
       <ProfileCard userData={userData} />
-      <ul>
-        <FriendsCard friends={friends} />
-      </ul>
-      <div>
-        <TransactionHistory transactions={transactions} />
-      </div>
+
+      <FriendsCard friends={friends} />
+
+      <TransactionHistory transactions={transactions} />
     </>
   );
 }

@@ -1,11 +1,15 @@
+import css from "./FriendsCard.module.css";
+
 const FriendsTemplate = ({ avatar, name, isOnline = false }) => {
   return (
     <>
-      <li>
-        <img src={avatar} alt={name} width="48" />
-        <p>{name}</p>
-        <p>{isOnline ? "Online" : "Offline"}</p>
-      </li>
+      <img className={css.cardImg} src={avatar} alt={name} width="48" />
+      <p className={css.cardName}>{name}</p>
+      <p
+        className={`${css.cardStatus} ${isOnline ? css.cardStatusOnline : ""}`}
+      >
+        {isOnline ? "Online" : "Offline"}
+      </p>
     </>
   );
 };

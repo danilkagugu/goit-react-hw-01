@@ -1,3 +1,5 @@
+// import css from "./TransationHistory.module.css";
+
 const TransactionHistoryTemplate = ({ type, amount, currency }) => {
   return (
     <>

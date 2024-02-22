@@ -1,0 +1,90 @@
+.exercises {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.imgGoIt {
+  position: absolute;
+}
+
+.profileBox {
+  margin: 10px auto;
+  padding-top: 15px;
+  border-radius: 20px;
+  width: 350px;
+  border: 5px solid black;
+}
+
+.topProfileBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgBox {
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.profileImg {
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden;
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+.profileTitle {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.profileTag {
+  color: gray;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.profileLocation {
+  color: gray;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.profileList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-top: 3px solid gray;
+  background-color: rgb(200, 200, 200);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.profileItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% / 3);
+  padding: 10px;
+  border-right: 3px solid gray;
+}
+
+.profileItem:last-child {
+  border-right: none;
+}
+
+.profileStatsName {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.profileStatsValue {
+  font-size: 19px;
+  font-weight: 700;
+}

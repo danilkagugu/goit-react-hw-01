@@ -1,0 +1,44 @@
+.exercises {
+  text-align: center;
+  margin-bottom: 10px;
+  border-top: 3px solid gray;
+  margin-top: 40px;
+  padding: 25px;
+}
+
+.imgGoIt {
+  position: absolute;
+}
+
+.tableBox {
+  margin: 20px auto;
+  max-width: 850px;
+}
+
+.tableTop {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+.tableTheard {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+}
+
+.tableTbody {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.tableLine:nth-child(even) {
+  background-color: gray;
+}
+
+.tableTbody td {
+  border: 2px solid black;
+}

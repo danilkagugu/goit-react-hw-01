@@ -1,0 +1,48 @@
+.exercises {
+  text-align: center;
+  margin-bottom: 10px;
+  border-top: 3px solid gray;
+  margin-top: 40px;
+  padding: 25px;
+}
+
+.imgGoIt {
+  position: absolute;
+}
+
+.friendsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardList {
+  display: flex;
+
+  gap: 10px;
+}
+
+.cardItem {
+  padding: 35px 35px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cardImg {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.cardName {
+  font-size: 23px;
+  margin-bottom: 3px;
+}
+
+.cardStatus {
+  font-size: 23px;
+  color: red;
+}
+.cardStatusOnline {
+  color: green;
+}

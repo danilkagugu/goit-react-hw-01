@@ -1,5 +1,4 @@
 import ProfileTemplate from "./ProfileTemplate";
-
 const ProfileCard = ({ userData }) => {
   return (
     <ProfileTemplate
