@@ -1,4 +1,4 @@
-const Friends = ({ avatar, name, isOnline = false }) => {
+const FriendsTemplate = ({ avatar, name, isOnline = false }) => {
   return (
     <>
       <li>
@@ -10,4 +10,4 @@ const Friends = ({ avatar, name, isOnline = false }) => {
   );
 };
 
-export default Friends;
+export default FriendsTemplate;
