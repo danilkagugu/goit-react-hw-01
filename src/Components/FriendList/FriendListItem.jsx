@@ -1,6 +1,6 @@
 import css from "./FriendListItem.module.css";
 
-const FriendListItem = ({ avatar, name, isOnline = "false" }) => {
+const FriendListItem = ({ avatar, name, isOnline = false }) => {
   return (
     <>
       <img className={css.cardImg} src={avatar} alt={name} width="48" />
