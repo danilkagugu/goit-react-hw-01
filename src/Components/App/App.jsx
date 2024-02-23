@@ -4,7 +4,7 @@ import friends from "../../friends.json";
 import transactions from "../../transactions.json";
 import userData from "../../userData.json";
 
-import FriendsCard from "../FriendList/FriendList";
+import FriendList from "../FriendList/FriendList";
 import TransactionHistory from "../TransactionHistory/TransactionHistory";
 import Profile from "../Profile/Profile";
 
@@ -19,7 +19,7 @@ function App() {
         stats={userData.stats}
       />
 
-      <FriendsCard friends={friends} />
+      <FriendList friends={friends} />
 
       <TransactionHistory transactions={transactions} />
     </>

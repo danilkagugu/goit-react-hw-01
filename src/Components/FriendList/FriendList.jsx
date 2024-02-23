@@ -1,7 +1,7 @@
 import FriendListItem from "../FriendListItem/FriendListItem";
 import css from "./FriendList.module.css";
 
-const FriendsCard = ({ friends }) => {
+const FriendList = ({ friends }) => {
   return (
     <>
       <h2 className={css.exercises}>Завдання 2 - Список друзів</h2>
@@ -24,4 +24,4 @@ const FriendsCard = ({ friends }) => {
   );
 };
 
-export default FriendsCard;
+export default FriendList;
